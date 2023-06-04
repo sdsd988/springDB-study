@@ -2,12 +2,9 @@ package hello.jdbc.repository;
 
 import com.zaxxer.hikari.HikariDataSource;
 import hello.jdbc.domain.Member;
-import hello.repository.MemberRepositoryV0;
-import hello.repository.MemberRepositoryV1;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
 import java.sql.SQLException;
 import java.util.NoSuchElementException;
