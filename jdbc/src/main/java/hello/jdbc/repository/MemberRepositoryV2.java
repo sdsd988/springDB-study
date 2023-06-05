@@ -11,7 +11,7 @@ import java.util.NoSuchElementException;
 import static hello.jdbc.connection.DBConnectionUtil.getConnection;
 
 /**
- * JDBC - DataSource 사용, JdbcUtils 사용
+ * 트랜잭션 - 파라미터 연동, 풀을 고려한 종료
  */
 
 @Slf4j
