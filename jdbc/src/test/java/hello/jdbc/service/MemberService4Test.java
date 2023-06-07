@@ -1,9 +1,7 @@
 package hello.jdbc.service;
 
 import hello.jdbc.domain.Member;
-import hello.jdbc.repository.MemberRepository;
-import hello.jdbc.repository.MemberRepositoryV3;
-import hello.jdbc.repository.MemberRepositoryV4_1;
+import hello.jdbc.repository.*;
 import lombok.extern.slf4j.Slf4j;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
@@ -43,33 +41,36 @@ class MemberService4Test {
     private MemberService4 memberService;
 
     @TestConfiguration
-    static class TestConfig{
-       
+    static class TestConfig {
+
         private final DataSource dataSource;
 
         public TestConfig(DataSource dataSource) {
             this.dataSource = dataSource;
         }
+
         @Bean
-        MemberRepository memberRepository(){
-            return new MemberRepositoryV4_1(dataSource);
+        MemberRepository memberRepository() {
+//            return new MemberRepositoryV4_1(dataSource);
+//            return new MemberRepositoryV4_2(dataSource);
+            return new MemberRepositoryV5(dataSource);
         }
 
         @Bean
-        MemberService4 memberService4(){
+        MemberService4 memberService4() {
             return new MemberService4(memberRepository());
         }
     }
 
     @AfterEach
-    void after()  {
+    void after() {
         memberRepository.delete(MEMBER_A);
         memberRepository.delete(MEMBER_B);
         memberRepository.delete(MEMBER_EX);
     }
 
     @Test
-    void AopCheck(){
+    void AopCheck() {
         log.info("memberService class={}", memberService.getClass());
         log.info("memberRepository lass={}", memberRepository.getClass());
         Assertions.assertThat(AopUtils.isAopProxy(memberService)).isTrue();
