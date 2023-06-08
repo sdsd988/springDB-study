@@ -36,16 +36,16 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
     @Override
     public Item save(Item item) {
 
-        String sql = "insert into item(item_name,price,quantity) values(?,?,?)";
+        String sql = "insert into item (item_name, price, quantity) values (?, ?, ?)";
         KeyHolder keyHolder = new GeneratedKeyHolder();
-
-        template.update(connection->{
-            // 자동 증가 키
-            PreparedStatement ps = connection.prepareStatement(sql, new String[]{"id"});
+        template.update(connection -> {
+            //자동 증가 키
+            PreparedStatement ps = connection.prepareStatement(sql, new
+                    String[]{"id"});
             ps.setString(1, item.getItemName());
             ps.setInt(2, item.getPrice());
             ps.setInt(3, item.getQuantity());
-            return  ps;
+            return ps;
         }, keyHolder);
 
         long key = keyHolder.getKey().longValue();
@@ -58,7 +58,6 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
     public void update(Long itemId, ItemUpdateDto updateParam) {
 
         String sql = "update item set item_name=?, price=?, quantity=? where id=?";
-
         template.update(sql,
                 updateParam.getItemName(),
                 updateParam.getPrice(),
@@ -71,10 +70,10 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
     public Optional<Item> findById(Long id) {
 
         String sql = "select id, item_name, price, quantity from item where id=?";
-        try{
+        try {
             Item item = template.queryForObject(sql, itemRowMapper(), id);
             return Optional.of(item);
-        } catch (EmptyResultDataAccessException e){
+        } catch (EmptyResultDataAccessException e) {
             return Optional.empty();
         }
 
@@ -112,14 +111,16 @@ public class JdbcTemplateItemRepositoryV1 implements ItemRepository {
     }
 
 
-
     private RowMapper<Item> itemRowMapper() {
-        return ((rs,rowNum)->{
+        return ((rs, rowNum) -> {
+
             Item item = new Item();
             item.setId(rs.getLong("id"));
             item.setItemName(rs.getString("item_name"));
-            item.setPrice(rs.getInt("quantity"));
+            item.setPrice(rs.getInt("price"));
+            item.setQuantity(rs.getInt("quantity"));
             return item;
+
         });
     }
 
