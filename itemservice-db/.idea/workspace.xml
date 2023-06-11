@@ -5,17 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91577992-c364-41ae-9459-04ead50362d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/config/QuerydslConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/repository/jpa/JpaItemRepositoryV3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/config/V2Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/repository/v2/ItemQueryRepositoryV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/repository/v2/ItemRepositoryV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/service/ItemServiceV2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/hello/itemservice/ItemServiceApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/hello/itemservice/ItemServiceApplication.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/classes/hello.itemservice.domain.ItemRepositoryTest.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/classes/hello.itemservice.domain.ItemRepositoryTest.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/reports/tests/test/packages/hello.itemservice.domain.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/reports/tests/test/packages/hello.itemservice.domain.html" afterDir="false" />
@@ -76,6 +77,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -118,7 +120,7 @@
       <recent name="hello.itemservice.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ItemRepositoryTest">
+  <component name="RunManager" selected="Spring Boot.ItemServiceApplication">
     <configuration name="ItemRepositoryTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -259,7 +261,7 @@
       <workItem from="1686205286617" duration="7693000" />
       <workItem from="1686315279566" duration="6000" />
       <workItem from="1686322272727" duration="1912000" />
-      <workItem from="1686362652679" duration="8830000" />
+      <workItem from="1686362652679" duration="12407000" />
     </task>
     <servers />
   </component>
