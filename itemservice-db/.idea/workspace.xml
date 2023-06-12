@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91577992-c364-41ae-9459-04ead50362d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InternalCallV1Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InternalCallV2Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/TxBasicTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/TxLevelTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InitTxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/src/main/java/hello/springtx/SpringtxApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/src/main/resources/application.properties" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
