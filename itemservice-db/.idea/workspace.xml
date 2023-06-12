@@ -5,8 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91577992-c364-41ae-9459-04ead50362d0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InitTxTest.java" afterDir="false" />
-      &gt;&gt;&gt;&gt;&gt;&gt;&gt; Stashed changes
+      <change afterPath="$PROJECT_DIR$/../springtx/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/build.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/settings.gradle" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/main/java/hello/springtx/SpringtxApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/SpringtxApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InternalCallV1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InternalCallV2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/TxBasicTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/TxLevelTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/.gradle/7.6.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/.gradle/7.6.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/.gradle/7.6.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/.gradle/7.6.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/.gradle/file-system.probe" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/.gradle/file-system.probe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/HELP.md" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/HELP.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/build/reports/tests/test/classes/hello.springtx.apply.InitTxTest.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/build/reports/tests/test/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/build/reports/tests/test/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/build/reports/tests/test/packages/hello.springtx.apply.html" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/build/reports/tests/test/packages/hello.springtx.apply.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/build/test-results/test/TEST-hello.springtx.apply.InitTxTest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/build/test-results/test/binary/output.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/build/test-results/test/binary/output.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/build/test-results/test/binary/output.bin.idx" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/build/test-results/test/binary/output.bin.idx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/build/test-results/test/binary/results.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/build/test-results/test/binary/results.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InitTxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../springtx/src/test/java/hello/springtx/apply/InitTxTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
