@@ -23,7 +23,8 @@ public class ConnectionTest {
         log.info("connection={}. class={}",con1,con1.getClass());
         log.info("connection={}. class={}",con2,con2.getClass());
     }
-
+    // DriverManager DriverManagerDataSource 차이 이해
+    // 설정과 사용의 분리
     @Test
     void dataSourceManager() throws SQLException {
         //DriverManagerDataSource - 항상 새로운 커넥션을 획득
@@ -33,6 +34,7 @@ public class ConnectionTest {
 
     @Test
     void dataSourceConnectionPool() throws SQLException, InterruptedException {
+        //커넥션 풀링
         HikariDataSource dataSource = new HikariDataSource();
         dataSource.setJdbcUrl(URL);
         dataSource.setUsername(USERNAME);
