@@ -5,6 +5,7 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.transaction.UnexpectedRollbackException;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -32,7 +33,7 @@ class MemberServiceTest {
         //given
         String username = "outerTxOff_success";
 
-        //when
+        //when : 모든 데이터가 정상 저장된다.
         memberService.joinV1(username);
 
         //then
@@ -51,7 +52,7 @@ class MemberServiceTest {
         //given
         String username = "로그예외_outerTxOff_fail";
 
-        //when
+        //when : 예외 발생
         assertThatThrownBy(() -> memberService.joinV1(username)).isInstanceOf(RuntimeException.class);
 
         //then : 로그 데이터는 롤백된다.
@@ -127,7 +128,7 @@ class MemberServiceTest {
         String username = "로그예외_recoverException_fail";
 
         //when
-        assertThatThrownBy(() -> memberService.joinV2(username)).isInstanceOf(RuntimeException.class);
+        assertThatThrownBy(() -> memberService.joinV2(username)).isInstanceOf(UnexpectedRollbackException.class);
 
         //then : 모든 데이터는 롤백된다. 데이터 정합성 문제 없다.
         assertTrue(memberRepository.find(username).isEmpty());

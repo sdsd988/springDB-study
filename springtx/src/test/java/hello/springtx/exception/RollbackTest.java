@@ -51,7 +51,7 @@ public class RollbackTest {
             throw new RuntimeException();
         }
 
-        //체크 예외 발생: 커밋
+        //체크 예외 발생: 커밋, 왜 커밋하는 지
         @Transactional
         public void checkedException() throws MyException {
             log.info("call checkedException");
