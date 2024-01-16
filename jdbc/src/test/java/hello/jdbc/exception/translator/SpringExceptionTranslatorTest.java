@@ -41,7 +41,7 @@ public class SpringExceptionTranslatorTest {
         } catch (SQLException e ){
             assertThat(e.getErrorCode()).isEqualTo(42122);
             int errorCode = e.getErrorCode();
-            log.info("errorCodde={}", errorCode);
+            log.info("errorCode={}", errorCode);
             log.info("error",e);
         }
     }

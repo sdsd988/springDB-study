@@ -9,6 +9,9 @@ import java.util.NoSuchElementException;
 
 import static hello.jdbc.connection.DBConnectionUtil.getConnection;
 
+/**
+ * JDBC -DriverManager 사용
+ */
 @Slf4j
 public class MemberRepositoryV0 {
 
@@ -22,7 +25,7 @@ public class MemberRepositoryV0 {
             pstmt = con.prepareStatement(sql);
             pstmt.setString(1, member.getMemberId());
             pstmt.setInt(2, member.getMoney());
-            pstmt.executeUpdate();
+            pstmt.executeUpdate(); //데이터를 인서트할 경우
             return member;
         } catch (SQLException e) {
 
@@ -41,8 +44,8 @@ public class MemberRepositoryV0 {
         try {
             con = getConnection();
             pstmt = con.prepareStatement(sql);
-            pstmt.setString(1, memberId);
-            rs = pstmt.executeQuery();
+            pstmt.setString(1, memberId); //파라미터 세팅
+            rs = pstmt.executeQuery(); //데이터 조회할 경우
             if (rs.next()) {
                 Member member = new Member();
                 member.setMemberId(rs.getString("member_id"));

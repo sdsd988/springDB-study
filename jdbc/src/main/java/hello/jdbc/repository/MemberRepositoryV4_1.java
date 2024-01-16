@@ -18,7 +18,7 @@ import java.util.NoSuchElementException;
  */
 
 @Slf4j
-public class MemberRepositoryV4_1 implements MemberRepository {
+public class  MemberRepositoryV4_1 implements MemberRepository {
     private final DataSource dataSource;
 
     public MemberRepositoryV4_1(DataSource dataSource) {

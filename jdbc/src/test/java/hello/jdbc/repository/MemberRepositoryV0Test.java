@@ -31,6 +31,7 @@ class MemberRepositoryV0Test {
         assertThat(updateMember.getMoney()).isEqualTo(20000);
 
         //delete
+        //삭제할 경우 어떻게 테스트 할 것인지 -> assertThatThrownBy
         repository.delete(member.getMemberId());
         assertThatThrownBy(() -> repository.findById(member.getMemberId())).isInstanceOf(NoSuchElementException.class);
     }

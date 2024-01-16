@@ -21,7 +21,7 @@ import java.sql.SQLException;
 @RequiredArgsConstructor
 public class MemberService3_1 {
 
-    private final PlatformTransactionManager transactionManager;
+    private final PlatformTransactionManager transactionManager; //datasource를 통해 트랜잭션을 관리하는 기능을 위임한다.
     private final MemberRepositoryV3 memberRepository;
 
 
@@ -37,6 +37,7 @@ public class MemberService3_1 {
             transactionManager.rollback(status); //실패시 롤백
             throw new IllegalStateException(e);
         }
+        //release 해줄 필요가 없다. -> transactionmanager가 자동으로 수행해준다..
     }
 
     private void bizLogic(String fromId, String toId, int

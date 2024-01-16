@@ -26,13 +26,13 @@ import java.util.Optional;
 
 
 /**
- * NamedParameterJdbcTemplate
+ * NamedParameterJdbcTemplate : 파라미터를 순서로 지정하는 것이 아니라 이름으로 바인딩 하는 것
+ * 이름지정바인딩에서 파라미터를 바인딩 하는 방법 3가지
  * SqlParameterSource
- * - BeanPropertySqlParameterSource
+ * - BeanPropertySqlParameterSource 필드에 없는 값을 지정할 수 없다.
  * - MapSqlParameterSource
  * Map
- *
- * BeanPropertyRowMapper
+ * BeanPropertyRowMapper : 객체를 넘겨주면, 이를 기반으로 RowMapper 구현해 준다. , 데이터베이스 칼럼과 객체 필드명이 다를 경우 별칭을 사용해서 활용, myBatis에서도 같다.
  */
 
 @Slf4j
@@ -72,7 +72,7 @@ public class JdbcTemplateItemRepositoryV2 implements ItemRepository {
                 .addValue("itemName", updateParam.getItemName())
                 .addValue("price", updateParam.getPrice())
                 .addValue("quantity", updateParam.getQuantity())
-                .addValue("id", itemId);
+                .addValue("id", itemId); //이 부분이 별도로 필요하다.
 
         template.update(sql,param);
 

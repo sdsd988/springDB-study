@@ -10,13 +10,12 @@ import org.springframework.transaction.support.TransactionTemplate;
 import java.sql.SQLException;
 
 /**
- * 트랜잭션 - @Transactional AOP
+ * 트랜잭션 - @Transactional AOP 적용
  */
 
 @Slf4j
 public class MemberService3_3 {
 
-    //    private final PlatformTransactionManager transactionManager;
     private final MemberRepositoryV3 memberRepository;
 
     public MemberService3_3(MemberRepositoryV3 memberRepository) {
