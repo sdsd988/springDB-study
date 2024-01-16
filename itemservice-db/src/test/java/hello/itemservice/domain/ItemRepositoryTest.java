@@ -17,7 +17,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
 @Transactional
-@SpringBootTest
+@SpringBootTest // 애플리케이션의 설정을 바탕으로 테스트를 진행한다
 class ItemRepositoryTest {
 
     @Autowired
