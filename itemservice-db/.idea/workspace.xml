@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91577992-c364-41ae-9459-04ead50362d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/hello/itemservice/domain/ItemRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/hello/itemservice/domain/ItemRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/itemservice/ItemServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/ItemServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hello/itemservice/repository/jpa/JpaItemRepositoryV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/repository/jpa/JpaItemRepositoryV3.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +104,7 @@
       <recent name="hello.itemservice.config" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ItemRepositoryTest">
+  <component name="RunManager" selected="Application.ItemServiceApplication">
     <configuration name="ItemServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="hello.itemservice.ItemServiceApplication" />
       <module name="com.example.itemservice-db.main" />
@@ -141,7 +142,7 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ItemRepositoryTest.findItems" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ItemRepositoryTest.updateItem" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -154,7 +155,7 @@
           <list>
             <option value=":test" />
             <option value="--tests" />
-            <option value="&quot;hello.itemservice.domain.ItemRepositoryTest.findItems&quot;" />
+            <option value="&quot;hello.itemservice.domain.ItemRepositoryTest.updateItem&quot;" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -162,7 +163,7 @@
       <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
       <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
+      <ForceTestExec>true</ForceTestExec>
       <method v="2" />
     </configuration>
     <configuration name="itemservice-db [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
@@ -218,11 +219,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ItemRepositoryTest" />
         <item itemvalue="Gradle.itemservice-db [compileJava]" />
+        <item itemvalue="Gradle.ItemRepositoryTest" />
         <item itemvalue="Gradle.itemservice-db [clean]" />
         <item itemvalue="Application.ItemServiceApplication" />
-        <item itemvalue="Gradle.ItemRepositoryTest.findItems" />
+        <item itemvalue="Gradle.ItemRepositoryTest.updateItem" />
       </list>
     </recent_temporary>
   </component>
