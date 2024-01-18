@@ -58,6 +58,7 @@ public class BasicTxTest {
         log.info("트랜잭션1 커밋");
         txManager.commit(tx1);
 
+        log.info("트랜잭션2 시작");
         TransactionStatus tx2 = txManager.getTransaction(new DefaultTransactionAttribute());
         log.info("트랜잭션2 커밋");
         txManager.commit(tx2);
@@ -71,6 +72,7 @@ public class BasicTxTest {
         log.info("트랜잭션1 커밋");
         txManager.commit(tx1);
 
+        log.info("트랜잭션2 시작");
         TransactionStatus tx2 = txManager.getTransaction(new DefaultTransactionAttribute());
         log.info("트랜잭션2 커밋");
         txManager.rollback(tx2);

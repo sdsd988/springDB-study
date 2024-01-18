@@ -21,7 +21,7 @@ public class InitTxTest {
 
     @Test
     void go() {
-
+        //초기화 코드는 스프링이 초기화 시점에 호출한다.
     }
 
     @TestConfiguration

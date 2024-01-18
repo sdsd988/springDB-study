@@ -47,6 +47,7 @@ public class InternalCallV2Test {
     static class CallService{
 
         private final InternalService internalService;
+
         public void external(){
             log.info("call external");
             printTxInfo();

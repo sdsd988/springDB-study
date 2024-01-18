@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="91577992-c364-41ae-9459-04ead50362d0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/itemservice/ItemServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/ItemServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/hello/itemservice/repository/jpa/JpaItemRepositoryV3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hello/itemservice/repository/jpa/JpaItemRepositoryV3.java" afterDir="false" />
-    </list>
+    <list default="true" id="91577992-c364-41ae-9459-04ead50362d0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -220,8 +217,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.itemservice-db [compileJava]" />
-        <item itemvalue="Gradle.ItemRepositoryTest" />
         <item itemvalue="Gradle.itemservice-db [clean]" />
+        <item itemvalue="Gradle.ItemRepositoryTest" />
         <item itemvalue="Application.ItemServiceApplication" />
         <item itemvalue="Gradle.ItemRepositoryTest.updateItem" />
       </list>
